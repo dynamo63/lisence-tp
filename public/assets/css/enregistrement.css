@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+
+:root{
+    --color-primary:#9b2c2c;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #c53030;
+    color: #fed7d7;
+    font-family: "Mulish", sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 30%;
+}
+
+h1{
+    font-size: 48px;
+    margin-bottom: .2em;
+}
+
+form{
+    margin-bottom: 1em;
+}
+
+form legend{
+    font-family: "Mulish", sans-serif;
+    font-weight: bold;
+    margin-bottom: 1.1em;
+}
+
+.input-field{
+    display: flex;
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,.1), 0 2px 4px -1px rgba(0,0,0,0.06);
+}
+
+.input-field .input-text{
+    padding: 8px 4px;
+    flex-basis: 90%;
+    font-family: "Mulish", sans-serif;
+}
+
+.input-field .input-text:focus{
+    outline: none;
+}
+
+.input-field .input-button{
+    background-color: var(--color-primary);
+    color: #ffffff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.input-field .input-button:hover{
+    background-color: #c53030;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+}
+
+.footer .footer-link{
+    color: #ffffff;
+}

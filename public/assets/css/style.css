@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+
+:root{
+    --color-primary:#9b2c2c;
+    --border-size:4px;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #c53030;
+    color: #fed7d7;
+    font-family: "Mulish", sans-serif;
+}
+
+.container{
+    width: 40%;
+    margin: auto;
+}
+
+/* ------------- la date du jour et le boutton d'inscription...  */
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5em;
+    font-size: .9em;
+    align-items: center;
+    font-weight: bold;
+}
+
+
+.header .button{
+    text-decoration: none;
+    color: #ffffff;
+    background-color: var(--color-primary);
+    border-top: var(--border-size) solid #ffffff;
+    border-bottom: var(--border-size) solid #ffffff;
+    border-radius: 4px;
+    font-size: .9em;
+    padding: 4px 16px;
+}
+
+.header .button:hover{
+    background-color: #c53030;
+}
+
+/* ----------------- Tableau ------------ */
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th{
+    text-align: left;
+    font-size: .9em;
+}
+
+td,th{
+    padding: 8px 16px;
+}
+
+td{
+    color: #000000;
+}
+
+tbody td{
+    border:1px solid #cfcfcfa6;
+}
+
+tbody tr:nth-child(odd){
+    background-color: rgb(254, 215, 215);
+}
+
+tbody tr:nth-child(even){
+    background-color: #ffffff;
+}
+
+/* ---------- footer ------------ */
+.footer{
+    display: flex;
+    justify-content: center;
+    margin:1em 0;
+}
+
+.footer a.btn-secondary{
+    background-color: var(--color-primary);
+    text-decoration: none;
+    color: #ffffff;
+    border-radius: 4px;
+    padding: 4px 16px;
+}
