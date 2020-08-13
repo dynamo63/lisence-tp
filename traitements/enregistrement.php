@@ -4,7 +4,8 @@ $nom = $_POST['name'];
 
 // Validation du nom
 if (strlen($nom) < 10) {
-    echo "<p> Votre nom doit comporter plus de 10 caracteres </p>";
+    //echo "<p> Votre nom doit comporter plus de 10 caracteres </p>";
+    header("location:../pages/enregistrement.php?erreur=1");
     die();
 }
 

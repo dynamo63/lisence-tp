@@ -20,6 +20,23 @@ body{
     width: 30%;
 }
 
+.alert-message{
+    background-color: #fed7d7;
+    color: #c53030;
+    padding: 12px;
+    border-radius: 3px;
+    border: 2px solid #fed7d7;
+    display: none;
+}
+
+.alert-message span{
+    font-weight: bold;
+}
+
+.visible{
+    display: block;
+}
+
 h1{
     font-size: 48px;
     margin-bottom: .2em;
