@@ -9,7 +9,7 @@ if (strlen($nom) < 10) {
     die();
 }
 
-// 
+// On genere le nom du fichier
 $nomDuFichier = "liste-". date("dmY").".txt";
 
 $monFichier = fopen("../stockage/$nomDuFichier", "a+");
