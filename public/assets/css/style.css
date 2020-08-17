@@ -11,12 +11,10 @@ body{
     background-color: #c53030;
     color: #fed7d7;
     font-family: "Mulish", sans-serif;
+    display: flex;
+    justify-content: center;
 }
 
-.container{
-    width: 40%;
-    margin: auto;
-}
 
 /* ------------- la date du jour et le boutton d'inscription...  */
 
@@ -90,4 +88,10 @@ tbody tr:nth-child(even){
     color: #ffffff;
     border-radius: 4px;
     padding: 4px 16px;
+}
+
+@media print{
+    a {
+        display: none;
+    }
 }
