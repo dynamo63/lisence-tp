@@ -8,11 +8,14 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: #c53030;
+    /* background-color: #c53030; */
     color: #fed7d7;
     font-family: "Mulish", sans-serif;
     display: flex;
     justify-content: center;
+    /* background-image: url("../img/2.jpeg"); */
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
