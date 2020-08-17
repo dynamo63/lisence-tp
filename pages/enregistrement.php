@@ -12,6 +12,9 @@
         <p class="alert-message <?= isset($_GET['erreur']) ? "visible": ""; ?>">
             <span>Oops!</span> Veuillez renseigner votre nom. <?php echo "Pardon!"?>
         </p>    
+        <p class="alert-message <?= isset($_GET['erreur_serveur']) ? "visible": ""; ?>">
+            <span>Oops!</span> Un probleme est survenu,Veuillez reessayer plus tard <?php echo "Pardon!"?>
+        </p>    
         <h1>Lisence</h1>
         <form action="../traitements/enregistrement.php" method="POST">
             <legend>Veuillez renseigner votre nom complet</legend>

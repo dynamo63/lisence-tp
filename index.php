@@ -70,6 +70,16 @@
         </footer>
 
     </main>
+    
+    <script type="text/javascript">
+        
+        let bouton = document.querySelector(".btn-secondary");
+        //on cree un evenement click sur le bouton
+        bouton.onclick = e =>{
+            e.preventDefault();
+            window.print();   
+        }
+    </script>
 
 </body>
 </html>

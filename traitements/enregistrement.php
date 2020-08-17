@@ -19,8 +19,15 @@ $nomDuFichier = "liste-". date("dmY").".txt";
 
 // Creation du fichier 
 $monFichier = fopen("../stockage/$nomDuFichier", "a+");
+
+// 
+if ($monFichier === false) {
+    header("location:../pages/enregistrement.php?erreur_serveur=1");
+    die();
+}
 fputs($monFichier,"$nom;".date("H:i")."\n");
 fclose($monFichier);
+
 
 // Redirection vers l'accueil
 header("location:../");
