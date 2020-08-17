@@ -1,5 +1,10 @@
 <?php
 
+// Si le dossier n'existe pas , on le cree
+if (!file_exists("../stockage")) {
+    mkdir("../stockage");
+}
+
 $nom = $_POST['name'];
 
 // Validation du nom
@@ -12,9 +17,11 @@ if (strlen($nom) < 10) {
 // On genere le nom du fichier
 $nomDuFichier = "liste-". date("dmY").".txt";
 
+// Creation du fichier 
 $monFichier = fopen("../stockage/$nomDuFichier", "a+");
 fputs($monFichier,"$nom;".date("H:i")."\n");
 fclose($monFichier);
 
+// Redirection vers l'accueil
 header("location:../");
 exit();
